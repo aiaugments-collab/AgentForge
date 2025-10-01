@@ -1,0 +1,314 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --glow-color: #ffb6c1;
+  --default-color-1: #ff69b4;
+  --default-color-2: #ff1493;
+  --primary: #8142e3;
+  --primary-50: #f3f0ff;
+  --primary-300: #c4b5fd;
+  
+  /* Docs-specific variables matching the HTML */
+  --primary: 110 65 226;
+  --primary-light: 197 179 243;
+  --primary-dark: 104 56 224;
+  --background-light: 255 255 255;
+  --background-dark: 18 18 18;
+  --gray-50: 246 244 249;
+  --gray-100: 241 239 244;
+  --gray-200: 225 224 229;
+  --gray-300: 209 208 212;
+  --gray-400: 161 160 165;
+  --gray-500: 115 113 118;
+  --gray-600: 83 81 86;
+  --gray-700: 65 64 69;
+  --gray-800: 40 39 44;
+  --gray-900: 26 24 29;
+  --gray-950: 13 12 17;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Magic text effect for AI Agents */
+.magic-text {
+  background: linear-gradient(135deg, var(--default-color-1), var(--default-color-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.magic-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--default-color-1), var(--default-color-2));
+  filter: blur(8px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Magic text with animated stars */
+.magic {
+  position: relative;
+  display: inline-block;
+}
+
+.magic-star {
+  position: absolute;
+  left: var(--star-left);
+  top: var(--star-top);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  animation: twinkle 2s ease-in-out infinite alternate;
+}
+
+.magic-star svg {
+  width: 100%;
+  height: 100%;
+  fill: #ff69b4;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Font family for magical text */
+.font-libre-baskerville {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Ensure gradient background is visible */
+.blur-background {
+  opacity: 0.8;
+  will-change: transform;
+}
+
+/* Infinite horizontal scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Rainbow animation for Start free button */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-rainbow {
+  animation: rainbow 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* Gradient animation for MCP card */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+  background-size: 250% 250%;
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Primary color utilities */
+.bg-primary-50 {
+  background-color: var(--primary-50);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.border-primary-300 {
+  border-color: var(--primary-300);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/* Docs-specific color utilities */
+.bg-background-light {
+  background-color: rgb(var(--background-light));
+}
+
+.bg-background-dark {
+  background-color: rgb(var(--background-dark));
+}
+
+.bg-primary-dark {
+  background-color: rgb(var(--primary-dark));
+}
+
+.text-primary {
+  color: rgb(var(--primary));
+}
+
+.text-primary-light {
+  color: rgb(var(--primary-light));
+}
+
+.bg-primary\/10 {
+  background-color: rgb(var(--primary) / 0.1);
+}
+
+.bg-primary-light\/10 {
+  background-color: rgb(var(--primary-light) / 0.1);
+}
+
+.focus\:outline-primary:focus {
+  outline-color: rgb(var(--primary));
+}
+
+.focus\:outline-primary-light:focus {
+  outline-color: rgb(var(--primary-light));
+}
+
+.hover\:\!border-primary:hover {
+  border-color: rgb(var(--primary)) !important;
+}
+
+.hover\:\!border-primary-light:hover {
+  border-color: rgb(var(--primary-light)) !important;
+}
+
+.group-hover\:text-primary {
+  color: rgb(var(--primary));
+}
+
+.group-hover\:text-primary-light {
+  color: rgb(var(--primary-light));
+}
+
+/* Marquee animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee__group {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee--reverse .marquee__group {
+  animation: marquee-reverse 30s linear infinite;
+}
+
+/* Hover to pause */
+  .group:hover .marquee__group {
+    animation-play-state: paused;
+  }
+
+  /* Shining text animation */
+  .shining-text {
+    background: linear-gradient(90deg, #000 0%, #666 50%, #000 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shine 2s ease-in-out infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Animated border */
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+
+  .animate-border {
+    animation: border-spin 3s linear infinite;
+  }
+
+  @keyframes border-spin {
+    to {
+      --border-angle: 360deg;
+    }
+  }

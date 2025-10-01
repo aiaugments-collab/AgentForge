@@ -2,11 +2,11 @@
 <h1 align="center">
   <a
     target="_blank"
-    href="https://activepieces.com"
+    href="https://agentforge.augment.cfd/"
   >
     <img
       align="center"
-      alt="Activepieces"
+      alt="Augment AgentForge"
 src="https://github.com/activepieces/activepieces/assets/1812998/76c97441-c285-4480-bc75-30a0c73ed340"
       style="width:100%;"
     />
@@ -19,20 +19,20 @@ src="https://github.com/activepieces/activepieces/assets/1812998/76c97441-c285-4
 <a href="/LICENSE" target="_blank"><img src='https://img.shields.io/badge/license-MIT-green?style=for-the-badge' /></a>&nbsp;<img src='https://img.shields.io/github/commit-activity/w/activepieces/activepieces/main?style=for-the-badge' />&nbsp;<a href='https://discord.gg/2jUXBKDdP8'><img src='https://img.shields.io/discord/966798490984382485?style=for-the-badge' /></a>
 </p>
 <p align="center">
-   An open source replacement for Zapier
+   Augment AgentForge - Where AI agents are built
 </p>
 
 <p align="center">
   <a
-    href="https://www.activepieces.com/docs"
+    href="https://agentforge.augment.cfd/docs"
     target="_blank"
   ><b>Documentation</b></a>&nbsp;&nbsp;&nbsp;🌪️&nbsp;&nbsp;&nbsp;
    <a
-    href="https://www.activepieces.com/docs/developers/overview"
+    href="https://agentforge.augment.cfd/docs/developers/overview"
     target="_blank"
   ><b>Create a Piece</b></a>&nbsp;&nbsp;&nbsp;🖉&nbsp;&nbsp;&nbsp;
   <a
-    href="https://www.activepieces.com/docs/install/overview"
+    href="https://agentforge.augment.cfd/docs/install/overview"
     target="_blank"
   ><b>Deploy</b></a>&nbsp;&nbsp;&nbsp;🔥&nbsp;&nbsp;&nbsp;
   <a
@@ -46,15 +46,15 @@ src="https://github.com/activepieces/activepieces/assets/1812998/76c97441-c285-4
 <br>
 <br>
 
-# 🤯 Welcome to Activepieces
+# 🤯 Welcome to Augment AgentForge
 
 All-in-one AI automation designed to be **extensible** through a **type-safe** pieces framework written in **TypeScript**.
-When you contribute pieces to Activepieces they become automatically available as MCP servers that you can use with LLMs through Claude Desktop, Cursor or Windsurf!
+When you contribute pieces to Augment AgentForge they become automatically available as MCP servers that you can use with LLMs through Claude Desktop, Cursor or Windsurf!
 
 <br>
 <br>
 
-## 🔥 Why Activepieces is Different:
+## 🔥 Why Augment AgentForge is Different:
 
 - **💖 Loved by Everyone**: Intuitive interface and great experience for both technical and non-technical users with a quick learning curve.
 
