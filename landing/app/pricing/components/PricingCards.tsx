@@ -21,7 +21,7 @@ export default function PricingCards() {
           </div>
           <div className="flex justify-center w-full mt-2 mb-6">
             <a 
-              href="https://cloud.activepieces.com/sign-up" 
+              href="https://cloudagent.augment.cfd/sign-up" 
               className="text-center text-white font-semibold rounded-lg text-base px-8 py-3.5 bg-gray-900 hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 transition"
             >
               Get started
@@ -92,7 +92,7 @@ export default function PricingCards() {
           </div>
           <div className="flex justify-center w-full mt-2 mb-6">
             <a 
-              href="https://cloud.activepieces.com/sign-up" 
+              href="https://cloudagent.augment.cfd/sign-up" 
               className="text-center text-white font-semibold rounded-lg text-base px-8 py-3.5 bg-gray-900 hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 transition"
             >
               Try free
@@ -171,7 +171,7 @@ export default function PricingCards() {
           </div>
           <div className="flex justify-center w-full mt-2 mb-6">
             <a 
-              href="https://cloud.activepieces.com/sign-up" 
+              href="https://cloudagent.augment.cfd/sign-up" 
               className="text-center text-white font-semibold rounded-lg text-base px-8 py-3.5 bg-gray-900 hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 transition"
             >
               Try free

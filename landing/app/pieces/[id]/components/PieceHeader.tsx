@@ -29,7 +29,7 @@ export default function PieceHeader({ piece }: PieceHeaderProps) {
       </p>
       
       <a 
-        href="https://cloud.activepieces.com/sign-up" 
+        href="https://cloudagent.augment.cfd/sign-up" 
         className="mt-10 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-normal rounded-lg text-xl px-10 py-4 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
       >
         Start free

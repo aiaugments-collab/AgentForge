@@ -340,7 +340,7 @@ export default function NavigationHeader() {
                   Talk to sales
                 </a>
                 <a
-                  href="https://cloud.activepieces.com/sign-up"
+                  href="https://cloudagent.augment.cfd/sign-up"
                   className="group relative inline-flex h-10 items-center justify-center rounded-lg px-4 py-2 text-base font-medium text-white transition-all duration-300 hover:scale-105"
                 >
                   <span className="absolute inset-0 rounded-lg bg-black"></span>

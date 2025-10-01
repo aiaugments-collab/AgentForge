@@ -25,7 +25,7 @@ export default function Footer() {
                     Talk to Sales
                   </a>
                   <a
-                    href="https://cloud.activepieces.com/sign-up"
+                    href="https://cloudagent.augment.cfd/sign-up"
                     className="whitespace-nowrap text-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-6 py-3 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
                   >
                     Start free

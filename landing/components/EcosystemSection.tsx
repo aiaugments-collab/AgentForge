@@ -212,7 +212,7 @@ export default function EcosystemSection() {
                     <div className="flex flex-row items-stretch h-full justify-center">
                       <div className="absolute top-0 left-0 bottom-0 w-px border-l border-black" />
                       <a
-                        href="https://cloud.activepieces.com/sign-up"
+                        href="https://cloudagent.augment.cfd/sign-up"
                         target="_blank"
                         rel="noopener"
                         className="bg-gray-900 text-white rounded-xl px-6 py-3 font-semibold shadow hover:bg-gray-800 transition whitespace-nowrap my-4 md:my-auto ml-0"

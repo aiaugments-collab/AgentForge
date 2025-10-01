@@ -70,7 +70,7 @@ export default function HeroSection() {
             
             <div className="flex flex-col space-y-5 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-5 justify-center lg:justify-start">
               <a
-                href="https://cloud.activepieces.com/sign-up"
+                href="https://cloudagent.augment.cfd/sign-up"
                 className="group relative inline-flex h-14 items-center justify-center rounded-lg px-7 py-4 text-lg font-medium text-white transition-all duration-300 hover:scale-105"
               >
                 <span className="absolute inset-0 rounded-lg bg-black"></span>
