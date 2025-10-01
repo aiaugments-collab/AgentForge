@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between md:space-x-24">
                 <div className="max-w-screen-md mb-6 sm:mb-8 md:mb-0 text-center md:text-left">
                   <h2 className="mb-4 text-2xl sm:text-3xl lg:text-[3rem] tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
-                    Get Activepieces now!
+                    Get AgentForge now!
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl">
                     Join 100,000+ users from Google, Roblox, ClickUp and more building secure, open source AI automations. Start automating your work in minutes.
@@ -70,18 +70,13 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 text-sm sm:text-base lg:text-lg">
               <li className="mb-3 sm:mb-4">
-                <a href="https://www.activepieces.com/docs" className="hover:underline transition-colors duration-200">
+                <a href="https://agentforge.com/docs" className="hover:underline transition-colors duration-200">
                   Docs
                 </a>
               </li>
               <li className="mb-3 sm:mb-4">
                 <a href="https://www.augment.cfd/developers/forums" className="hover:underline transition-colors duration-200">
                   Tutorials
-                </a>
-              </li>
-              <li className="mb-3 sm:mb-4">
-                <a href="/blog" className="hover:underline transition-colors duration-200">
-                  Blog
                 </a>
               </li>
             </ul>
@@ -94,17 +89,7 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 text-sm sm:text-base lg:text-lg">
               <li className="mb-3 sm:mb-4">
-                <a href="https://community.activepieces.com" className="hover:underline transition-colors duration-200">
-                  Community
-                </a>
-              </li>
-              <li className="mb-3 sm:mb-4">
-                <a href="https://discord.com/invite/2jUXBKDdP8" className="hover:underline transition-colors duration-200">
-                  Discord
-                </a>
-              </li>
-              <li className="mb-3 sm:mb-4">
-                <a href="https://status.activepieces.com" className="hover:underline transition-colors duration-200">
+                <a href="#" className="hover:underline transition-colors duration-200">
                   Cloud Status
                 </a>
               </li>
@@ -116,7 +101,7 @@ export default function Footer() {
         <hr className="my-4 sm:my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex flex-col justify-between items-center text-center lg:flex-row space-y-4 lg:space-y-0">
           <span className="block text-sm sm:text-base lg:text-lg text-gray-500 dark:text-gray-400">
-            © 2025 Activepieces. All rights reserved
+            © 2025 AgentForge. All rights reserved
           </span>
           <div className="text-gray-500 flex flex-wrap justify-center gap-2 text-sm sm:text-base lg:text-lg">
             <a href="/terms" className="hover:underline transition-colors duration-200">

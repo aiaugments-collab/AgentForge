@@ -1,54 +1,46 @@
 @import "tailwindcss";
 
-@config {
-  darkMode: false;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --glow-color: #ffb6c1;
-  --default-color-1: #ff69b4;
-  --default-color-2: #ff1493;
-  --primary: #8142e3;
-  --primary-50: #f3f0ff;
-  --primary-300: #c4b5fd;
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-glow: #ffb6c1;
+  --color-default-1: #ff69b4;
+  --color-default-2: #ff1493;
+  --color-primary: #8142e3;
+  --color-primary-50: #f3f0ff;
+  --color-primary-300: #c4b5fd;
   
   /* Docs-specific variables matching the HTML */
-  --primary: 110 65 226;
-  --primary-light: 197 179 243;
-  --primary-dark: 104 56 224;
-  --background-light: 255 255 255;
-  --background-dark: 18 18 18;
-  --gray-50: 246 244 249;
-  --gray-100: 241 239 244;
-  --gray-200: 225 224 229;
-  --gray-300: 209 208 212;
-  --gray-400: 161 160 165;
-  --gray-500: 115 113 118;
-  --gray-600: 83 81 86;
-  --gray-700: 65 64 69;
-  --gray-800: 40 39 44;
-  --gray-900: 26 24 29;
-  --gray-950: 13 12 17;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: 110 65 226;
+  --color-primary-light: 197 179 243;
+  --color-primary-dark: 104 56 224;
+  --color-background-light: 255 255 255;
+  --color-background-dark: 18 18 18;
+  --color-gray-50: 246 244 249;
+  --color-gray-100: 241 239 244;
+  --color-gray-200: 225 224 229;
+  --color-gray-300: 209 208 212;
+  --color-gray-400: 161 160 165;
+  --color-gray-500: 115 113 118;
+  --color-gray-600: 83 81 86;
+  --color-gray-700: 65 64 69;
+  --color-gray-800: 40 39 44;
+  --color-gray-900: 26 24 29;
+  --color-gray-950: 13 12 17;
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Magic text effect for AI Agents */
 .magic-text {
-  background: linear-gradient(135deg, var(--default-color-1), var(--default-color-2));
+  background: linear-gradient(135deg, var(--color-default-1), var(--color-default-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -182,72 +174,72 @@ body {
 
 /* Primary color utilities */
 .bg-primary-50 {
-  background-color: var(--primary-50);
+  background-color: var(--color-primary-50);
 }
 
 .text-primary {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .border-primary-300 {
-  border-color: var(--primary-300);
+  border-color: var(--color-primary-300);
 }
 
 .bg-primary {
-  background-color: var(--primary);
+  background-color: var(--color-primary);
 }
 
 /* Docs-specific color utilities */
 .bg-background-light {
-  background-color: rgb(var(--background-light));
+  background-color: rgb(var(--color-background-light));
 }
 
 .bg-background-dark {
-  background-color: rgb(var(--background-dark));
+  background-color: rgb(var(--color-background-dark));
 }
 
 .bg-primary-dark {
-  background-color: rgb(var(--primary-dark));
+  background-color: rgb(var(--color-primary-dark));
 }
 
 .text-primary {
-  color: rgb(var(--primary));
+  color: rgb(var(--color-primary));
 }
 
 .text-primary-light {
-  color: rgb(var(--primary-light));
+  color: rgb(var(--color-primary-light));
 }
 
 .bg-primary\/10 {
-  background-color: rgb(var(--primary) / 0.1);
+  background-color: rgb(var(--color-primary) / 0.1);
 }
 
 .bg-primary-light\/10 {
-  background-color: rgb(var(--primary-light) / 0.1);
+  background-color: rgb(var(--color-primary-light) / 0.1);
 }
 
 .focus\:outline-primary:focus {
-  outline-color: rgb(var(--primary));
+  outline-color: rgb(var(--color-primary));
 }
 
 .focus\:outline-primary-light:focus {
-  outline-color: rgb(var(--primary-light));
+  outline-color: rgb(var(--color-primary-light));
 }
 
 .hover\:\!border-primary:hover {
-  border-color: rgb(var(--primary)) !important;
+  border-color: rgb(var(--color-primary)) !important;
 }
 
 .hover\:\!border-primary-light:hover {
-  border-color: rgb(var(--primary-light)) !important;
+  border-color: rgb(var(--color-primary-light)) !important;
 }
 
 .group-hover\:text-primary {
-  color: rgb(var(--primary));
+  color: rgb(var(--color-primary));
 }
 
 .group-hover\:text-primary-light {
-  color: rgb(var(--primary-light));
+  color: rgb(var(--color-primary-light));
 }
 
 /* Marquee animations */
