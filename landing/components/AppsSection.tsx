@@ -54,10 +54,10 @@ const apps3: App[] = [
 const AppCard = ({ app }: { app: App }) => (
   <a
     href={'#'}
-    className="w-[280px] h-[67px] grow-0 shrink-0 shadow-[0_0_1px_#181d263d,_0_2px_4px_#181d2614,_0_2px_16px_#181d260f] rounded-xl p-4 flex flex-row items-center hover:shadow-[0_0_1px_#181d263d,_0_4px_6px_#181d2614,_0_4px_18px_#181d260f] hover:-translate-y-1 transition-all duration-400"
+    className="w-[240px] sm:w-[280px] h-[60px] sm:h-[67px] grow-0 shrink-0 shadow-[0_0_1px_#181d263d,_0_2px_4px_#181d2614,_0_2px_16px_#181d260f] rounded-xl p-3 sm:p-4 flex flex-row items-center hover:shadow-[0_0_1px_#181d263d,_0_4px_6px_#181d2614,_0_4px_18px_#181d260f] hover:-translate-y-1 transition-all duration-400"
   >
     <img
-      className="me-3 h-[37px] w-fit"
+      className="me-2 sm:me-3 h-[32px] sm:h-[37px] w-fit"
       loading="lazy"
       width="50"
       height="50"
@@ -65,8 +65,8 @@ const AppCard = ({ app }: { app: App }) => (
       alt={app.name}
     />
     <span>
-      <span className="block text-lg font-bold text-gray-600">{app.name}</span>
-      <span className="block text-sm text-gray-600">{app.category}</span>
+      <span className="block text-base sm:text-lg font-bold text-gray-600">{app.name}</span>
+      <span className="block text-xs sm:text-sm text-gray-600">{app.category}</span>
     </span>
   </a>
 );
@@ -88,23 +88,23 @@ const MarqueeRow = ({ apps, reverse = false }: { apps: App[]; reverse?: boolean 
 
 export default function AppsSection() {
   return (
-    <section className="bg-white dark:bg-gray-900 my-32">
-      <div className="mx-10 max-w-screen-2xl sm:py-6 lg:px-6">
-        <div className="gap-8 items-center xl:gap-16 flex flex-col md:flex-row">
+    <section className="bg-white dark:bg-gray-900 my-16 sm:my-32">
+      <div className="mx-4 sm:mx-10 max-w-screen-2xl sm:py-6 lg:px-6">
+        <div className="gap-6 sm:gap-8 items-center xl:gap-16 flex flex-col md:flex-row">
           <div className="basis-1/4 text-center px-4 md:text-left">
-            <h2 className="mb-4 text-[2.75rem] tracking-tight font-bold text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-[2.75rem] tracking-tight font-bold text-gray-900 dark:text-white">
               Automate the apps that matter to you
             </h2>
-            <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
+            <p className="font-light text-gray-500 dark:text-gray-400 text-base sm:text-xl">
               Our pieces library grows every day through our team and community contributions
             </p>
             <a
               href="/pieces"
-              className="inline-flex items-center mt-6 justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="inline-flex items-center mt-4 sm:mt-6 justify-center px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 transition-colors duration-200"
             >
               Browse our 52 pieces
               <svg
-                className="w-5 h-5 ml-2 -mr-1"
+                className="w-4 h-4 sm:w-5 sm:h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function AppsSection() {
             </a>
           </div>
           
-          <div className="group w-full md:basis-3/4 flex flex-col space-y-8 overflow-hidden [mask-image:linear-gradient(90deg,#0000,#fff_5%,#fff_95%,#0000)]">
+          <div className="group w-full md:basis-3/4 flex flex-col space-y-4 sm:space-y-8 overflow-hidden [mask-image:linear-gradient(90deg,#0000,#fff_5%,#fff_95%,#0000)]">
             <MarqueeRow apps={apps} />
             <MarqueeRow apps={apps2} reverse />
             <MarqueeRow apps={apps3} />

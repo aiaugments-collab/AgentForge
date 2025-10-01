@@ -20,12 +20,12 @@ export default function DocsLayout({
         {/* Sidebar */}
         <DocsSidebar />
         
-      {/* Content Area */}
-      <div className="relative grow box-border flex-col w-full mx-auto px-6 lg:pl-[25rem] lg:-ml-12" id="content-area">
-        <div className="w-full max-w-none">
-          {children}
+        {/* Content Area */}
+        <div className="relative grow box-border flex-col w-full mx-auto px-4 sm:px-6 lg:pl-[25rem] lg:-ml-12" id="content-area">
+          <div className="w-full max-w-none">
+            {children}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

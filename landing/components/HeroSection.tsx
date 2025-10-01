@@ -18,11 +18,11 @@ export default function HeroSection() {
           zIndex: '-10'
         }}
       ></div>
-      <div className="max-w-screen-xl px-4 pt-[108px] xl:pt-[132px] pb-[50px] mx-auto max-[500px]:pt-[120px]">
+      <div className="max-w-screen-xl px-4 sm:px-6 lg:px-8 pt-[108px] xl:pt-[132px] pb-[50px] mx-auto">
         <div className="lg:grid pb-12 gap-8 lg:gap-12 lg:grid-cols-12 items-start">
           <div className="lg:col-span-6 text-center sm:mb-6 lg:text-left lg:mb-0">
             <div className="max-w-screen-sm mx-auto">
-              <h1 className="mt-10 magical-text mb-8 font-libre-baskerville font-light leading-[1.45!important] tracking-tight text-gray-900 text-5xl xl:text-[4.3rem] xl:leading-[4.9rem] dark:text-white">
+              <h1 className="mt-6 sm:mt-10 magical-text mb-6 sm:mb-8 font-libre-baskerville font-light leading-[1.45!important] tracking-tight text-gray-900 text-3xl sm:text-4xl md:text-5xl xl:text-[4.3rem] xl:leading-[4.9rem] dark:text-white">
                 <span className="magic">
                   <span className="magic-star" style={{'--star-left': '75%', '--star-top': '79%'} as React.CSSProperties}>
                     <svg viewBox="0 0 512 512">
@@ -43,31 +43,31 @@ export default function HeroSection() {
                 </span>
               </h1>
               
-              <div className="flex flex-col space-y-2 mb-10 max-[1023px]:items-center">
-                <div className="flex items-center text-gray-900 dark:text-white max-[1023px]:inline-flex">
-                  <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex flex-col space-y-3 mb-8 sm:mb-10 items-center lg:items-start">
+                <div className="flex items-center text-gray-900 dark:text-white">
+                  <svg className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg font-medium">No-code – you click, it works</span>
+                  <span className="text-base sm:text-lg font-medium">No-code – you click, it works</span>
                 </div>
-                <div className="flex items-center text-gray-900 dark:text-white max-[1023px]:inline-flex">
-                  <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center text-gray-900 dark:text-white">
+                  <svg className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg font-medium">Open source – customizable and secure</span>
+                  <span className="text-base sm:text-lg font-medium">Open source – customizable and secure</span>
                 </div>
-                <div className="flex items-center text-gray-900 dark:text-white max-[1023px]:inline-flex">
-                  <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center text-gray-900 dark:text-white">
+                  <svg className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
                   </svg>
-                  <span className="text-lg font-medium">Training – guided by us, built by your team</span>
+                  <span className="text-base sm:text-lg font-medium">Training – guided by us, built by your team</span>
                 </div>
               </div>
               
-              <div className="flex flex-col space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+              <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center lg:justify-start sm:space-y-0 sm:space-x-4">
                 <a
                   href="https://cloudagent.augment.cfd/sign-up"
-                  className="group relative inline-flex h-12 items-center justify-center rounded-lg px-5 py-3 text-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                  className="group relative inline-flex h-12 items-center justify-center rounded-lg px-6 py-3 text-base sm:text-lg font-medium text-white transition-all duration-300 hover:scale-105"
                 >
                   <span className="absolute inset-0 rounded-lg bg-black"></span>
                   <span className="absolute -bottom-1 left-1/2 h-1/5 w-3/5 -translate-x-1/2 animate-rainbow rounded-full bg-gradient-to-r from-[#ff3ea5] via-[#1e9bf0] to-[#6420aa] blur-md"></span>
@@ -75,7 +75,7 @@ export default function HeroSection() {
                 </a>
                 <a
                   href="/sales"
-                  className="inline-flex h-12 items-center justify-center px-5 py-3 text-lg font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
+                  className="inline-flex h-12 items-center justify-center px-6 py-3 text-base sm:text-lg font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none transition-all duration-300 hover:scale-105"
                 >
                   Talk to sales
                 </a>
@@ -83,7 +83,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 mt-10 lg:mt-0 lg:pt-12">
+          <div className="lg:col-span-6 mt-8 sm:mt-10 lg:mt-0 lg:pt-12">
             <video 
               src="/agentForge-a-demo.mp4" 
               autoPlay 
@@ -92,18 +92,18 @@ export default function HeroSection() {
               playsInline 
               width="350" 
               height="350" 
-              className="max-w-[1280px] w-full max-h-[500px] object-contain rounded-xl shadow-[0_0_80px_rgba(0,0,0,0.1)]"
+              className="max-w-[1280px] w-full max-h-[300px] sm:max-h-[400px] lg:max-h-[500px] object-contain rounded-xl shadow-[0_0_80px_rgba(0,0,0,0.1)]"
             />
           </div>
         </div>
         
-        <section className="py-[10px] dark:bg-gray-900 mx-auto rounded-t-[20px] overflow-hidden relative z-10 mt-10">
-          <h2 className="mb-14 text-2xl tracking-tight font-bold text-gray-900 dark:text-white text-center">
+        <section className="py-6 sm:py-8 dark:bg-gray-900 mx-auto rounded-t-[20px] overflow-hidden relative z-10 mt-8 sm:mt-10">
+          <h2 className="mb-8 sm:mb-14 text-xl sm:text-2xl tracking-tight font-bold text-gray-900 dark:text-white text-center px-4">
             Trusted by companies from startups to Fortune 50
           </h2>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-white to-transparent opacity-100 z-10 pointer-events-none"></div>
-            <div className="flex animate-scroll items-center space-x-10 w-max brightness-0">
+            <div className="absolute inset-y-0 left-0 w-20 sm:w-40 bg-gradient-to-r from-white to-transparent opacity-100 z-10 pointer-events-none"></div>
+            <div className="flex animate-scroll items-center space-x-6 sm:space-x-10 w-max brightness-0">
               <div className="relative h-6">
                 <img src="/logos/posthog.svg" alt="Posthog" className="m-auto h-6" />
               </div>
@@ -165,7 +165,7 @@ export default function HeroSection() {
                 <img src="/logos/pipedrive.svg" alt="Pipedrive" className="m-auto h-6" />
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-white to-transparent opacity-100 z-10 pointer-events-none"></div>
+            <div className="absolute inset-y-0 right-0 w-20 sm:w-40 bg-gradient-to-l from-white to-transparent opacity-100 z-10 pointer-events-none"></div>
           </div>
         </section>
       </div>

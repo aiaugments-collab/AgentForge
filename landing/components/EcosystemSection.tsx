@@ -104,7 +104,7 @@ export default function EcosystemSection() {
   };
 
   return (
-    <section className="max-w-screen-xl mx-10 pt-16 md:pt-40 pb-24 px-4 md:px-0">
+    <section className="max-w-screen-xl mx-1 pt-16 md:pt-40 pb-24 px-4 md:px-0">
       <div className="px-0 md:px-8">
         <h2 className="font-libre-baskerville text-[2.75rem] md:text-[3.3rem] font-light leading-tight tracking-tight text-gray-900 dark:text-white mb-8 md:mb-16 text-left">
           The full AI automation and agents ecosystem
@@ -112,7 +112,7 @@ export default function EcosystemSection() {
       </div>
 
       {/* Mobile sticky navigation */}
-      <div className="sticky top-[62px] z-20 bg-white border-b border-gray-100 md:hidden overflow-x-auto px-4 gap-8 h-12 hide-scrollbar flex items-center">
+      <div className="sticky top-[62px] z-20 bg-white border-b border-gray-100 md:hidden overflow-x-auto m-2 gap-8 h-12 hide-scrollbar flex items-center">
         {productTabs.map((tab) => (
           <button
             key={tab.id}

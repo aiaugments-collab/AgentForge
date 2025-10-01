@@ -1,24 +1,24 @@
+import MobileNavigation from './MobileNavigation';
+
 export default function NavigationHeader() {
   return (
     <div className="sticky top-0 z-50 w-full">
-      <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 max-[905px]:bg-white transition-all duration-300">
-        <nav className="border-gray-200 px-6 h-[62px] lg:px-8 dark:bg-gray-800 max-[905px]:bg-white">
-          <div className="flex flex-wrap space-x-10 h-full items-stretch justify-between mx-auto max-w-none max-[905px]:space-x-0">
+      <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
+        <nav className="border-gray-200 px-4 sm:px-6 lg:px-8 h-[62px] dark:bg-gray-800">
+          <div className="flex h-full items-center justify-between mx-auto max-w-7xl">
             {/* Logo */}
-            <div className="flex flex-row h-[62px] flex-shrink-0 flex-grow-0 items-center max-[555px]:overflow-hidden max-[555px]:w-[30px]">
-              <a href="/" className="router-link-active router-link-exact-active flex items-center">
-                <div className="flex items-center">
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center mr-3">
-                    <span className="text-white font-bold text-lg">A</span>
-                  </div>
-                  <span className="text-lg font-bold text-gray-900">AgentForge</span>
+            <div className="flex items-center flex-shrink-0">
+              <a href="/" className="flex items-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-lg">A</span>
                 </div>
+                <span className="text-lg font-bold text-gray-900 hidden sm:block">AgentForge</span>
               </a>
             </div>
             
-            {/* Navigation Menu */}
-            <div className="flex-grow hidden text-base justify-between items-center w-full min-[906px]:flex min-[906px]:w-auto min-[906px]:order-1 max-[905px]:bg-white max-[905px]:w-full max-[905px]:max-h-dvh max-[905px]:flex-col max-[905px]:justify-start max-[905px]:items-stretch max-[905px]:overflow-scroll max-[905px]:!-mx-4 max-[905px]:px-4 max-[905px]:h-[calc(100vh_-_62px)]" id="mobile-menu-2">
-              <ul className="flex flex-col min-[906px]:flex-row min-[906px]:items-center min-[906px]:space-x-8 max-[905px]:w-full">
+            {/* Desktop Navigation Menu */}
+            <div className="hidden md:flex items-center space-x-8">
+              <ul className="flex items-center space-x-8">
                 {/* Product Dropdown */}
                 <li className="relative group">
                   <div className="absolute left-0 top-0 w-full h-[calc(100%+10px)] opacity-0"></div>
@@ -325,17 +325,17 @@ export default function NavigationHeader() {
             </div>
             
             {/* Action Buttons */}
-            <div className="flex items-center flex-grow-0 min-[906px]:order-2">
+            <div className="flex items-center space-x-4">
               <a
                 href="https://cloud.activepieces.com"
-                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-base px-4 py-2 lg:px-4 lg:py-2 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 max-[555px]:hidden"
+                className="hidden sm:inline-flex text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-base px-4 py-2 transition-colors duration-200"
               >
                 Login
               </a>
-              <div className="flex flex-row gap-x-2">
+              <div className="flex items-center space-x-2">
                 <a
                   href="/sales"
-                  className="inline-flex h-10 items-center justify-center px-4 py-2 text-base font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
+                  className="hidden sm:inline-flex h-10 items-center justify-center px-4 py-2 text-base font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none transition-all duration-300 hover:scale-105"
                 >
                   Talk to sales
                 </a>
@@ -348,18 +348,7 @@ export default function NavigationHeader() {
                   <span className="relative">Start free</span>
                 </a>
               </div>
-              <button
-                data-collapse-toggle="mobile-menu-2"
-                type="button"
-                className="items-center p-2 ms-2 text-sm text-gray-500 rounded-lg hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 max-[905px]:flex"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
-                </svg>
-              </button>
+              <MobileNavigation />
             </div>
           </div>
         </nav>
