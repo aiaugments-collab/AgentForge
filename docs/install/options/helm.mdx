@@ -1,9 +1,9 @@
 ---
 title: 'Helm'
-description: 'Deploy Activepieces on Kubernetes using Helm'
+description: 'Deploy AgentForge on Kubernetes using Helm'
 ---
 
-This guide walks you through deploying Activepieces on Kubernetes using the official Helm chart.
+This guide walks you through deploying AgentForge on Kubernetes using the official Helm chart.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ helm dependency update
 
 Create a `my-values.yaml` file with your configuration. You can use the [example values file](https://github.com/activepieces/activepieces/blob/main/deploy/activepieces-helm/values.yaml) as a reference.
 
-### 4. Install Activepieces
+### 4. Install AgentForge
 
 ```bash
 helm install activepieces deploy/activepieces-helm -f my-values.yaml
