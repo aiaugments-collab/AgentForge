@@ -24,7 +24,7 @@ export default function HeroSection() {
           {/* Left Side: Hero Content */}
           <div className="lg:col-span-5 text-center sm:mb-8 lg:text-left lg:mb-0">
             <div className="max-w-2xl">
-            <h1 className="mt-3 magical-text mb-6 font-libre-baskerville font-light leading-[1.3!important] tracking-tight text-gray-900 text-6xl xl:text-[5.6rem] xl:leading-[6.2rem] dark:text-white">
+            <h1 className="mt-3 magical-text mb-6 font-libre-baskerville font-light leading-[1.3!important] tracking-tight text-gray-900 text-5xl xl:text-[5rem] xl:leading-[5.5rem] dark:text-white">
               <span className="magic">
                 <span className="magic-star" style={{'--star-left': '51%', '--star-top': '10%'} as React.CSSProperties}>
                   <svg viewBox="0 0 512 512">
@@ -52,7 +52,7 @@ export default function HeroSection() {
                 <svg className="w-6 h-6 mr-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-2xl font-medium">No-code – you click, it works</span>
+                <span className="text-xl font-medium">No-code – you click, it works</span>
               </div>
               <div className="flex items-center text-gray-900 dark:text-white max-[1023px]:inline-flex">
                 <svg className="w-6 h-6 mr-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ export default function HeroSection() {
             <div className="flex flex-col space-y-5 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-5 justify-center lg:justify-start">
               <a
                 href="https://cloud.activepieces.com/sign-up"
-                className="group relative inline-flex h-14 items-center justify-center rounded-lg px-7 py-4 text-xl font-medium text-white transition-all duration-300 hover:scale-105"
+                className="group relative inline-flex h-14 items-center justify-center rounded-lg px-7 py-4 text-lg font-medium text-white transition-all duration-300 hover:scale-105"
               >
                 <span className="absolute inset-0 rounded-lg bg-black"></span>
                 <span className="absolute -bottom-1 left-1/2 h-1/5 w-3/5 -translate-x-1/2 animate-rainbow rounded-full bg-gradient-to-r from-[#ff3ea5] via-[#1e9bf0] to-[#6420aa] blur-md"></span>
@@ -79,7 +79,7 @@ export default function HeroSection() {
               </a>
               <a
                 href="/sales"
-                className="inline-flex h-14 items-center justify-center px-7 py-4 text-xl font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
+                className="inline-flex h-14 items-center justify-center px-7 py-4 text-lg font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
               >
                 Talk to sales
               </a>

@@ -36,6 +36,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  // Set turbopack root to silence warnings
+  turbopack: {
+    root: __dirname,
+  },
+
   // Configure MDX
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 };

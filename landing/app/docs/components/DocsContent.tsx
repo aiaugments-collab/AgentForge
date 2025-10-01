@@ -298,18 +298,22 @@ const components = {
   Frame,
   CodeGroup,
   Code,
-  h1: (props: any) => (
-    <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6 pb-4 border-b border-gray-200 dark:border-gray-700" {...props} />
-  ),
-  h2: (props: any) => (
-    <h2 className="text-4xl font-semibold text-gray-900 dark:text-white mt-12 mb-4" {...props} />
-  ),
-  h3: (props: any) => (
-    <h3 className="text-3xl font-semibold text-gray-900 dark:text-white mt-8 mb-3" {...props} />
-  ),
-  h4: (props: any) => (
-    <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6 mb-2" {...props} />
-  ),
+        h1: (props: any) => {
+          const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || '';
+          return <h1 id={id} className="text-5xl font-bold text-gray-900 dark:text-white mb-6 pb-4 border-b border-gray-200 dark:border-gray-700" {...props} />;
+        },
+        h2: (props: any) => {
+          const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || '';
+          return <h2 id={id} className="text-4xl font-semibold text-gray-900 dark:text-white mt-12 mb-4" {...props} />;
+        },
+        h3: (props: any) => {
+          const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || '';
+          return <h3 id={id} className="text-3xl font-semibold text-gray-900 dark:text-white mt-8 mb-3" {...props} />;
+        },
+        h4: (props: any) => {
+          const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || '';
+          return <h4 id={id} className="text-2xl font-semibold text-gray-900 dark:text-white mt-6 mb-2" {...props} />;
+        },
   p: (props: any) => (
     <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-8" {...props} />
   ),
@@ -416,7 +420,7 @@ export default function DocsContent({ frontmatter, content, slug }: DocsContentP
 
       {/* MDX Content */}
       <div 
-        className="mdx-content relative mt-8 mb-14 prose prose-gray dark:prose-invert"
+        className="mdx-content docs-content relative mt-8 mb-14 prose prose-gray dark:prose-invert"
         data-page-title={title}
         data-page-href={`/${slug.join('/')}`}
         id="content"

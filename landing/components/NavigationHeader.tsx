@@ -11,19 +11,19 @@ export default function NavigationHeader() {
                   <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center mr-3">
                     <span className="text-white font-bold text-lg">A</span>
                   </div>
-                  <span className="text-xl font-bold text-gray-900">AgentForge</span>
+                  <span className="text-lg font-bold text-gray-900">AgentForge</span>
                 </div>
               </a>
             </div>
             
             {/* Navigation Menu */}
-            <div className="flex-grow hidden text-lg justify-between items-center w-full min-[906px]:flex min-[906px]:w-auto min-[906px]:order-1 max-[905px]:bg-white max-[905px]:w-full max-[905px]:max-h-dvh max-[905px]:flex-col max-[905px]:justify-start max-[905px]:items-stretch max-[905px]:overflow-scroll max-[905px]:!-mx-4 max-[905px]:px-4 max-[905px]:h-[calc(100vh_-_62px)]" id="mobile-menu-2">
+            <div className="flex-grow hidden text-base justify-between items-center w-full min-[906px]:flex min-[906px]:w-auto min-[906px]:order-1 max-[905px]:bg-white max-[905px]:w-full max-[905px]:max-h-dvh max-[905px]:flex-col max-[905px]:justify-start max-[905px]:items-stretch max-[905px]:overflow-scroll max-[905px]:!-mx-4 max-[905px]:px-4 max-[905px]:h-[calc(100vh_-_62px)]" id="mobile-menu-2">
               <ul className="flex flex-col min-[906px]:flex-row min-[906px]:items-center min-[906px]:space-x-8 max-[905px]:w-full">
                 {/* Product Dropdown */}
                 <li className="relative group">
                   <div className="absolute left-0 top-0 w-full h-[calc(100%+10px)] opacity-0"></div>
                   <button className="flex items-center gap-1 py-2 text-black group-hover:text-[#8142e3] transition-colors duration-200">
-                    <span className="font-normal text-lg">Product</span>
+                    <span className="font-normal text-base">Product</span>
                     <svg className="w-4 h-4 transition-transform duration-200 ease-in-out transform origin-center group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
@@ -48,7 +48,7 @@ export default function NavigationHeader() {
                         </div>
                       </a>
                       
-                      <a href="/docs/install/overview" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
+                      <a href="/docs/install/overview" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
                         <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-pink-100 to-pink-200">
                           <svg className="w-6 h-6" fill="#EC4899" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"></path>
@@ -63,7 +63,7 @@ export default function NavigationHeader() {
                         </div>
                       </a>
                       
-                      <a href="https://www.activepieces.com/docs/embedding/overview" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
+                      <a href="/docs/embedding/overview" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
                         <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-green-100 to-green-200">
                           <svg className="w-6 h-6" fill="#34C759" viewBox="0 0 24 24">
                             <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path>
@@ -78,7 +78,7 @@ export default function NavigationHeader() {
                         </div>
                       </a>
                       
-                      <a href="https://www.activepieces.com/docs/security/practices" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
+                      <a href="/docs/security/practices" className="flex items-center gap-4 h-20 rounded-xl hover:bg-gray-100 transition px-4 py-4 group/feature">
                         <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-200">
                           <svg className="w-6 h-6" fill="#6366F1" viewBox="0 0 24 24">
                             <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
@@ -154,7 +154,7 @@ export default function NavigationHeader() {
                 <li className="relative group">
                   <div className="absolute left-0 top-0 w-full h-[calc(100%+10px)] opacity-0"></div>
                   <button className="flex items-center gap-1 py-2 text-black group-hover:text-[#8142e3] transition-colors duration-200">
-                    <span className="font-normal text-lg">Resources</span>
+                    <span className="font-normal text-base">Resources</span>
                     <svg className="w-4 h-4 transition-transform duration-200 ease-in-out transform origin-center group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
@@ -165,7 +165,7 @@ export default function NavigationHeader() {
                     {/* Use AgentForge Column */}
                     <div className="flex flex-col gap-2">
                       <h3 className="text-sm font-semibold text-gray-500 mb-2">Use AgentForge</h3>
-                      <a href="https://www.activepieces.com/docs/flows/building-flows" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
+                      <a href="/docs/flows/building-flows" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
                         <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-blue-50 group-hover/item:bg-blue-100 transition-colors">
                           <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
@@ -220,7 +220,7 @@ export default function NavigationHeader() {
                     {/* Technical Column */}
                     <div className="flex flex-col gap-2">
                       <h3 className="text-sm font-semibold text-gray-500 mb-2">Technical</h3>
-                      <a href="https://www.activepieces.com/docs/install/overview" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
+                      <a href="/docs/install/overview" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
                         <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-purple-50 group-hover/item:bg-purple-100 transition-colors">
                           <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
@@ -231,7 +231,7 @@ export default function NavigationHeader() {
                           <div className="text-sm text-gray-500">Set up on your servers</div>
                         </div>
                       </a>
-                      <a href="https://www.activepieces.com/docs" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
+                      <a href="/docs" className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 group/item">
                         <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-purple-50 group-hover/item:bg-purple-100 transition-colors">
                           <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
@@ -319,7 +319,7 @@ export default function NavigationHeader() {
                 
                 {/* Pricing Link */}
                 <li>
-                  <a href="/pricing" className="py-2 text-black hover:text-[#8142e3] transition-colors duration-200 font-normal text-lg">Pricing</a>
+                  <a href="/pricing" className="py-2 text-black hover:text-[#8142e3] transition-colors duration-200 font-normal text-base">Pricing</a>
                 </li>
               </ul>
             </div>
@@ -328,20 +328,20 @@ export default function NavigationHeader() {
             <div className="flex items-center flex-grow-0 min-[906px]:order-2">
               <a
                 href="https://cloud.activepieces.com"
-                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-4 py-2 lg:px-4 lg:py-2 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 max-[555px]:hidden"
+                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-base px-4 py-2 lg:px-4 lg:py-2 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 max-[555px]:hidden"
               >
                 Login
               </a>
               <div className="flex flex-row gap-x-2">
                 <a
                   href="/sales"
-                  className="inline-flex h-10 items-center justify-center px-4 py-2 text-lg font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
+                  className="inline-flex h-10 items-center justify-center px-4 py-2 text-base font-medium text-gray-700 text-center rounded-lg bg-white border-2 border-gray-900 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 sm:mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 transition-all duration-300 hover:scale-105"
                 >
                   Talk to sales
                 </a>
                 <a
                   href="https://cloud.activepieces.com/sign-up"
-                  className="group relative inline-flex h-10 items-center justify-center rounded-lg px-4 py-2 text-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                  className="group relative inline-flex h-10 items-center justify-center rounded-lg px-4 py-2 text-base font-medium text-white transition-all duration-300 hover:scale-105"
                 >
                   <span className="absolute inset-0 rounded-lg bg-black"></span>
                   <span className="absolute -bottom-1 left-1/2 h-1/5 w-3/5 -translate-x-1/2 animate-rainbow rounded-full bg-gradient-to-r from-[#ff3ea5] via-[#1e9bf0] to-[#6420aa] blur-md"></span>

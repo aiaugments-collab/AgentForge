@@ -312,3 +312,114 @@ body {
       --border-angle: 360deg;
     }
   }
+
+/* Enhanced typography for better polish */
+.docs-content {
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better card shadows and transitions */
+.card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Improved prose styling */
+.prose {
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.prose p {
+  color: rgb(75 85 99);
+  line-height: 1.75;
+}
+
+.dark .prose p {
+  color: rgb(209 213 219);
+}
+
+/* Global scaling reduction for docs - 10% smaller */
+.docs-content {
+  --scale-factor: 0.9;
+}
+
+.docs-content h1 {
+  font-size: calc(3rem * var(--scale-factor)) !important; /* was text-5xl */
+}
+
+.docs-content h2 {
+  font-size: calc(2.25rem * var(--scale-factor)) !important; /* was text-4xl */
+}
+
+.docs-content h3 {
+  font-size: calc(1.875rem * var(--scale-factor)) !important; /* was text-3xl */
+}
+
+.docs-content h4 {
+  font-size: calc(1.5rem * var(--scale-factor)) !important; /* was text-2xl */
+}
+
+.docs-content p {
+  font-size: calc(1.125rem * var(--scale-factor)) !important; /* was text-lg */
+}
+
+.docs-content ul, .docs-content ol, .docs-content li {
+  font-size: calc(1.125rem * var(--scale-factor)) !important; /* was text-lg */
+}
+
+.docs-content code {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
+
+.docs-content pre {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
+
+.docs-content blockquote {
+  font-size: calc(1.125rem * var(--scale-factor)) !important; /* was text-lg */
+}
+
+.docs-content td {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
+
+/* Scale the page header elements */
+.docs-content .eyebrow {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
+
+#page-title {
+  font-size: calc(2.25rem * var(--scale-factor)) !important; /* was text-3xl sm:text-4xl */
+}
+
+.docs-content .text-xl {
+  font-size: calc(1.25rem * var(--scale-factor)) !important; /* description text */
+}
+
+/* Scale card titles and content */
+.card h3 {
+  font-size: calc(1.125rem * var(--scale-factor)) !important; /* was text-lg */
+}
+
+.card p {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
+
+/* Scale callout components */
+.docs-content .not-prose {
+  font-size: calc(1rem * var(--scale-factor)) !important; /* was text-base */
+}
